@@ -13,11 +13,7 @@ const ContactoPage = () => {
   const formSchema = z.object({
     name: z.string().min(2, 'El nombre debe tener al menos 2 caracteres'),
     email: z.string().email('Ingresa un email válido'),
-    business: z.string().min(5, 'Cuéntanos sobre tu negocio'),
-    monthlyRevenue: z.string().min(1, 'Selecciona tu rango de facturación'),
-    challenge: z.string().min(10, 'Describe tu principal desafío'),
-    timeline: z.string().min(1, 'Selecciona tu timeline'),
-    notes: z.string().optional(),
+    comment: z.string().min(10, 'Déjanos tu comentario'),
   });
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
@@ -151,10 +147,10 @@ const ContactoPage = () => {
           >
             <div className="bg-white rounded-2xl shadow-2xl p-8">
               <h2 className="text-2xl font-montserrat font-bold text-elegant-gray mb-6">
-                Cuéntame sobre tu negocio
+                Contáctanos
               </h2>
               <p className="text-gray-600 mb-8">
-                Mientras más detalles me compartas, mejor podré preparar nuestra sesión estratégica.
+                Déjanos tu información y nos pondremos en contacto contigo.
               </p>
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -192,92 +188,24 @@ const ContactoPage = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Háblame de tu negocio *
+                    Comentario *
                   </label>
                   <textarea
-                    {...register('business')}
-                    rows={3}
+                    {...register('comment')}
+                    rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                    placeholder="¿Qué vendes? ¿Cuánto tiempo llevas en el negocio?"
+                    placeholder="Cuéntanos sobre tu negocio, tus desafíos o cualquier consulta que tengas..."
                   />
-                  {errors.business && (
-                    <p className="text-red-500 text-sm mt-1">{errors.business?.message as string}</p>
+                  {errors.comment && (
+                    <p className="text-red-500 text-sm mt-1">{errors.comment?.message as string}</p>
                   )}
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Facturación mensual actual *
-                  </label>
-                  <select
-                    {...register('monthlyRevenue')}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                  >
-                    <option value="">Selecciona tu rango</option>
-                    <option value="0-1k">$0 - $1,000</option>
-                    <option value="1k-5k">$1,000 - $5,000</option>
-                    <option value="5k-10k">$5,000 - $10,000</option>
-                    <option value="10k-25k">$10,000 - $25,000</option>
-                    <option value="25k-50k">$25,000 - $50,000</option>
-                    <option value="50k+">$50,000+</option>
-                  </select>
-                  {errors.monthlyRevenue && (
-                    <p className="text-red-500 text-sm mt-1">{errors.monthlyRevenue?.message as string}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    ¿Cuál es tu principal desafío? *
-                  </label>
-                  <textarea
-                    {...register('challenge')}
-                    rows={3}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                    placeholder="Pocas ventas, falta de tiempo, no sé por dónde empezar..."
-                  />
-                  {errors.challenge && (
-                    <p className="text-red-500 text-sm mt-1">{errors.challenge?.message as string}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    ¿Cuándo te gustaría empezar? *
-                  </label>
-                  <select
-                    {...register('timeline')}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                  >
-                    <option value="">Selecciona tu timeline</option>
-                    <option value="inmediato">Inmediatamente</option>
-                    <option value="1-2-semanas">En 1-2 semanas</option>
-                    <option value="1-mes">En 1 mes</option>
-                    <option value="2-3-meses">En 2-3 meses</option>
-                    <option value="solo-informacion">Solo busco información</option>
-                  </select>
-                  {errors.timeline && (
-                    <p className="text-red-500 text-sm mt-1">{errors.timeline?.message as string}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Notas adicionales
-                  </label>
-                  <textarea
-                    {...register('notes')}
-                    rows={3}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                    placeholder="Cualquier cosa adicional que quieras compartir..."
-                  />
                 </div>
 
                 <button
                   type="submit"
                   className="w-full btn-primary"
                 >
-                  Solicitar Sesión Estratégica
+                  Enviar Mensaje
                 </button>
               </form>
             </div>
