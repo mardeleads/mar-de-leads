@@ -1,21 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Montserrat, Open_Sans } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-
-const montserrat = Montserrat({ 
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-});
-
-const openSans = Open_Sans({ 
-  subsets: ['latin'],
-  variable: '--font-open-sans',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Mar de Leads - Consultoría de Marketing Digital para E-commerce',
@@ -42,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${montserrat.variable} ${openSans.variable} antialiased`}>
+      <body className="antialiased">
         <Header />
         <main className="min-h-screen">
           {children}
