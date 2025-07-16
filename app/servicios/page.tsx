@@ -191,7 +191,9 @@ const ServiciosPage = () => {
                 <p className="text-sm opacity-80 mb-6">Pago en 3 cuotas sin intereses</p>
                 
                 <Link
-                  href="/contacto"
+                  href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white text-ocean-blue font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block mb-4"
                 >
                   Reservar Llamada
@@ -357,7 +359,9 @@ const ServiciosPage = () => {
               Reserva tu sesión estratégica gratuita y descubre qué servicio se adapta mejor a tus necesidades.
             </p>
             <Link
-              href="/contacto"
+              href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-ocean-blue font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
             >
               Reservar Sesión Gratuita

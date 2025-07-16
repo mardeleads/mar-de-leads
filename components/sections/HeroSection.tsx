@@ -63,7 +63,9 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
             <Link
-              href="/contacto"
+              href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2"
             >
               Reserva tu sesión estratégica gratuita

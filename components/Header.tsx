@@ -59,7 +59,9 @@ const Header = () => {
               </Link>
             ))}
             <Link
-              href="/contacto"
+              href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary ml-4"
             >
               Reservar Sesión
@@ -102,7 +104,9 @@ const Header = () => {
               ))}
               <div className="px-4 py-3">
                 <Link
-                  href="/contacto"
+                  href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-primary w-full text-center inline-block"
                   onClick={() => setIsMenuOpen(false)}
                 >

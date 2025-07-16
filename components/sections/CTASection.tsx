@@ -30,7 +30,9 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Link
-              href="/contacto"
+              href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-ocean-blue font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center gap-2"
             >
               <Calendar size={20} />

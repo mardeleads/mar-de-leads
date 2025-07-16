@@ -299,9 +299,14 @@ const ContactoPage = () => {
               <p className="mb-6 opacity-90">
                 Accede a mi calendario y elige el horario que mejor te convenga
               </p>
-              <button className="bg-white text-ocean-blue font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+              <a
+                href="https://calendar.app.google/9Q7BL2P893YuTFL98"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-ocean-blue font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block"
+              >
                 Reservar Llamada Ahora
-              </button>
+              </a>
               <p className="text-sm opacity-80 mt-4">
                 Sesión de 30 minutos • Completamente gratuita
               </p>
