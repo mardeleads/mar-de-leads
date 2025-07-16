@@ -40,14 +40,7 @@ const WhyMarDeLeads = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+    visible: { opacity: 1, y: 0 }
   };
 
   return (
@@ -80,6 +73,7 @@ const WhyMarDeLeads = () => {
             <motion.div
               key={index}
               variants={itemVariants}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               className="card-hover p-8 text-center group"
             >
               <div className={`w-16 h-16 ${pillar.bgColor} rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
