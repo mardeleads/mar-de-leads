@@ -43,11 +43,7 @@ const ServicesPreview = () => {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
+      y: 0
     }
   };
 
@@ -81,6 +77,7 @@ const ServicesPreview = () => {
             <motion.div
               key={index}
               variants={cardVariants}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               {/* Gradient Background */}
