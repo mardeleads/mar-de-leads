@@ -95,7 +95,7 @@ const SobreMiPage = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/foto-perfil.webp"
                 alt="María - Fundadora de Mar de Leads"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
