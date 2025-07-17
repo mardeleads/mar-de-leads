@@ -4,6 +4,20 @@ import { motion } from 'framer-motion';
 import { Award, Users, TrendingUp, Heart, Target, Zap } from 'lucide-react';
 import Link from 'next/link';
 import CommunitySection from '@/components/sections/CommunitySection';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre Mí - María, Fundadora de Mar de Leads',
+  description: 'Conoce a María, fundadora de Mar de Leads y mentora de emprendedoras digitales. 8 años de experiencia ayudando a mujeres fundadoras a escalar sus e-commerce.',
+  openGraph: {
+    title: 'Sobre Mí - María, Fundadora de Mar de Leads',
+    description: 'Conoce a María, fundadora de Mar de Leads y mentora de emprendedoras digitales',
+    url: 'https://mardeleads.com/sobre-mi',
+  },
+  alternates: {
+    canonical: 'https://mardeleads.com/sobre-mi',
+  },
+};
 
 const SobreMiPage = () => {
   const differentiators = [

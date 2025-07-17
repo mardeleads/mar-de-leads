@@ -40,6 +40,7 @@ const HeroSection = () => {
           <motion.h1
             variants={fadeInUp}
             className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-elegant-gray mb-6 mt-24 md:mt-0"
+            itemProp="headline"
           >
             Escala tu <span className="gradient-text">e-commerce</span> sin caos ni humo
           </motion.h1>
@@ -47,6 +48,7 @@ const HeroSection = () => {
           <motion.p
             variants={fadeInUp}
             className="text-xl md:text-2xl text-gray-600 mb-4 font-medium"
+            itemProp="description"
           >
             Te ayudo a atraer, automatizar y vender con estrategia y alma
           </motion.p>

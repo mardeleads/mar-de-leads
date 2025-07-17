@@ -6,6 +6,20 @@ import { Calendar, Download, Mail, Phone, MapPin, MessageCircle, Instagram, Link
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contacto - Reserva tu Sesión Estratégica Gratuita',
+  description: 'Contacta con Mar de Leads para reservar tu sesión estratégica gratuita. Descubre cómo podemos escalar tu e-commerce en los próximos 90 días.',
+  openGraph: {
+    title: 'Contacto - Mar de Leads',
+    description: 'Reserva tu sesión estratégica gratuita con Mar de Leads',
+    url: 'https://mardeleads.com/contacto',
+  },
+  alternates: {
+    canonical: 'https://mardeleads.com/contacto',
+  },
+};
 
 const ContactoPage = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);

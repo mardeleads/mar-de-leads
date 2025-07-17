@@ -3,6 +3,20 @@
 import { motion } from 'framer-motion';
 import { CheckCircle, Star, Clock, Users, Zap, Target } from 'lucide-react';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Servicios - Consultoría de Marketing Digital para E-commerce',
+  description: 'Descubre nuestros servicios de consultoría especializada para fundadoras de e-commerce. Programa Escala Inteligente, auditorías, automatización y mentoring personalizado.',
+  openGraph: {
+    title: 'Servicios - Mar de Leads',
+    description: 'Servicios de consultoría especializada para fundadoras de e-commerce',
+    url: 'https://mardeleads.com/servicios',
+  },
+  alternates: {
+    canonical: 'https://mardeleads.com/servicios',
+  },
+};
 
 const ServiciosPage = () => {
   const starService = {
