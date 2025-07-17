@@ -255,9 +255,14 @@ const ServiciosPage = () => {
                   ))}
                 </ul>
                 
-                <button className="w-full btn-outline">
-                  Más información
-                </button>
+                <a
+                  href={`https://wa.me/34650913997?text=${encodeURIComponent(`Hola, me interesa conocer más sobre: ${service.title}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full btn-outline text-center inline-block"
+                >
+                  Solicitar información
+                </a>
               </motion.div>
             ))}
           </div>

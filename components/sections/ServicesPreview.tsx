@@ -108,10 +108,15 @@ const ServicesPreview = () => {
                 </ul>
 
                 {/* CTA */}
-                <button className="text-ocean-blue font-semibold hover:text-coral transition-colors duration-300 flex items-center gap-2 group">
-                  Más información
+                <a
+                  href={`https://wa.me/34650913997?text=${encodeURIComponent(`Hola, me interesa conocer más sobre el servicio: ${service.title}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ocean-blue font-semibold hover:text-coral transition-colors duration-300 flex items-center gap-2 group"
+                >
+                  Solicitar información
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
