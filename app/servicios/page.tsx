@@ -9,7 +9,7 @@ const ServiciosPage = () => {
     title: 'Programa Escala Inteligente',
     subtitle: 'Metodología completa para fundadoras que quieren pasar de $10K a $100K+',
     description: 'Sin perder la cordura en el proceso',
-    price: 'Desde $2,997',
+    price: 'Desde €2,997',
     duration: '12 semanas',
     includes: [
       'Auditoría completa de tu funnel de ventas',
@@ -33,7 +33,7 @@ const ServiciosPage = () => {
     {
       title: 'Auditoría Express',
       duration: '48 horas',
-      price: '$497',
+      price: '€497',
       description: 'Análisis completo de tu e-commerce con recomendaciones específicas',
       features: [
         'Análisis de conversión detallado',
@@ -46,7 +46,7 @@ const ServiciosPage = () => {
     {
       title: 'Intensivo de Conversión',
       duration: '30 días',
-      price: '$1,297',
+      price: '€1,297',
       description: 'Transformación rápida de tu funnel de ventas para máximos resultados',
       features: [
         'Optimización de landing pages',
@@ -59,7 +59,7 @@ const ServiciosPage = () => {
     {
       title: 'Mentoring VIP',
       duration: 'Mensual',
-      price: '$897/mes',
+      price: '€897/mes',
       description: 'Acompañamiento personalizado para crecimiento sostenible',
       features: [
         '4 sesiones mensuales 1:1',
